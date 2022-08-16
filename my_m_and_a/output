@@ -1,0 +1,67 @@
+
+[94m
+ ██████╗ ██╗    ██╗ █████╗ ███████╗ █████╗ ██████╗    ██╗ ██████╗ 
+██╔═══██╗██║    ██║██╔══██╗██╔════╝██╔══██╗██╔══██╗   ██║██╔═══██╗
+██║   ██║██║ █╗ ██║███████║███████╗███████║██████╔╝   ██║██║   ██║
+██║▄▄ ██║██║███╗██║██╔══██║╚════██║██╔══██║██╔══██╗   ██║██║   ██║
+╚██████╔╝╚███╔███╔╝██║  ██║███████║██║  ██║██║  ██║██╗██║╚██████╔╝
+ ╚══▀▀═╝  ╚══╝╚══╝ ╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝╚═╝ ╚═════╝ 
+																																 [0m
+Booting Gandalf v3.1.1-c2fe00c (production)
+Loading parameters:  [32mOK[0m
+User suxrobov_s connection: [32mOK[0m
+
+
+<MY_M_AND_A>
+Directory . exists: [32mOK[0m
+Pushing exercise: [32mOK[0m
+Printing your report:
+
+ [97;1;40m     REPORT      [0m  [97m  MY M AND A  [0m 
+
+ Status             [92mSUCCESS[0m        
+ Execution Runtime  5.287179       
+ Score              [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[33m-[0m] 7/8 
+
+
+Checks detail Report:
+
+ [97;1;40mTEST CSV TO SQL[0m  [92mSUCCESS[0m 
+
+
+
+ [97;1;40mTEST CSV TO SQL TEST CONTENT[0m  [92mSUCCESS[0m 
+
+
+
+ [97;1;40mTEST CSV TO SQL TEST HEADER[0m  [92mSUCCESS[0m 
+
+
+
+ [97;1;40mTEST MY M AND A[0m  [92mSUCCESS[0m 
+
+
+
+ [97;1;40mTEST MY M AND A AGE[0m  [92mSUCCESS[0m 
+
+
+
+ [97;1;40mTEST MY M AND A CITY[0m  [92mSUCCESS[0m 
+
+
+
+ [97;1;40mTEST MY M AND A FIRSTNAME LASTNAME[0m  [92mSUCCESS[0m 
+
+
+
+ [97;1;40mTEST MY M AND A GENDER[0m  [91m                                                                                                                                                                          FAILURE                                                                                                                                                                           [0m 
+
+ Input                                                                                                                                                                                                                                                                                                                                                                                
+ Expected Output         ""                                                                                                                                                                                                                                                                                                                                                           
+ Expected Return Value                                                                                                                                                                                                                                                                                                                                                                
+ Output                  "    def test_my_m_and_a_gender(self):\n        dataframe = eg.my_m_and_a(io.StringIO(content_database_1), io.StringIO(content_database_2), io.StringIO(content_database_3))\n\n        gold_gender = ['Female', 'Male']\n        gender_values = sorted(set(dataframe['Gender'].values.tolist()))\n        self.assertTrue(gender_values == gold_gender)\n" 
+ Return Value                                                                                                                                                                                                                                                                                                                                                                         
+
+Your Stderr:
+False is not true
+</MY_M_AND_A>
